@@ -10,7 +10,7 @@
 
 
 <target name="test">
-    <property name="comp.dir" value="java"/>
+    <property name="comp.dir" value="src"/>
 	<property name="comp.class.dir" value="target"/>
 	<property name="test.dir" value="result"/>
 	
