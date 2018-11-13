@@ -11,7 +11,7 @@
 
 <target name="test">
     <property name="comp.dir" value="src"/>
-	<property name="comp.class.dir" value="target"/>
+	<property name="comp.class.dir" value="target/junit"/>
 	<property name="test.dir" value="result"/>
 	
 	<!-- compile the FailedTests class if present -->
