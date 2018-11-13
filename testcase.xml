@@ -1,0 +1,38 @@
+<project name="junit" basedir="." default="test">
+<!--
+<taskdef resource="org\apache\tools\ant\taskdefs\optional\junit">
+    <classpath>
+        <pathelement location="D:\softs\apache-ant-1.10.5-bin\apache-ant-1.10.5\lib\ant-junit.jar"/>
+    </classpath>
+</taskdef>
+-->
+
+
+
+<target name="test">
+    <property name="comp.dir" value="java"/>
+	<property name="comp.class.dir" value="target"/>
+	<property name="test.dir" value="result"/>
+	
+	<!-- compile the FailedTests class if present -->
+    <javac srcdir="${comp.dir}" destdir="${comp.class.dir}" includeantruntime="false"/>
+   
+ 
+	<junit haltonerror="false" haltonfailure="no" printsummary="yes">
+       
+	  <classpath location="D:\softs\apache-ant-1.10.5-bin\apache-ant-1.10.5\lib\junit.jar"/>
+       
+	   <test name="JUnitHelloWorldTest" 
+			haltonfailure="no" todir="${test.dir}" outfile="result">
+			<!--<formatter type="plain" />-->
+			<formatter type="xml" />
+		</test>
+    </junit>
+
+</target>
+
+</project>
+    
+	  
+	  
+	 
